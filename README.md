@@ -1,50 +1,50 @@
 # ChallengeCrf
-## Projeto de desafio porposto para teste.
+## Challenge project put forward for testing.
 
-Projeto se propoe a fazer um crud com patterns de mercado e mecanismos usados em soluções no mercado de capitais, como mesageria e bibliotecas de compressão de dados para camada de transporte como protobuf.
+The project proposes to make a rough study of market standards and mechanisms used in capital market solutions, such as mesageria and data specification libraries for the transport layer such as protobuf.
 
-Arquitetura - Message/Event Driven e alguns elementos de Clean Architecture.
+Architecture - Message/Event Driven and some elements of Clean Architecture.
 
 Command-> Event
 
 Query-> Reply
 
-Usando  Filas do RabbiMQ para coreografia do ambiente.
+Using RabbiMQ Queues to choreograph the environment.
 
-Protobuf para compactação na camada de transporte.
+Protobuf for compression in the transport layer.
 
-SignalR no response do para o client/Angular.
+SignalR does not respond to the client/Angular.
 
-Padrões Criacionais usados:
+Creational Patterns used:
 
 Factory
 
 Singleton
 
-Padrões Comportmentais
+Behavioral Patterns
 
 Command
 
 Mediator 
 
-## Mais
+## More
 
-Ioc - Inversão de controle
+Ioc - Inversion of control
 
-CQRS - com Coreografia
+CQRS - with Choreography
 
-Injeção de depedencia
+dependency injection
 
 Unit of Work
 
-Event Sourcing (removido)
+Event Sourcing (removed)
 
-Alguns conceitos de solid tbm foram usados.
+Some solid concepts were also used.
 
 
-## Instruções para rodar
+## Instructions for running
 
-De dentro da pasta do projeto ChallengeCrf rodar :
+From within the ChallengeCrf project folder run:
 
 ```kind create cluster```
 
@@ -59,26 +59,26 @@ De dentro da pasta do projeto ChallengeCrf rodar :
 ```kubectl get pvc```
 
 
-Se um pod não está funcionando, por exemplo 'angular-service'
+If a pod is not working, for example 'angular-service'
 
 ```kubectl describe pod angular-service```
 
 ```kubectl logs angular-service```
 
 
-Irá subir os containers de:
+Up Containers of:
 
 rabbitmq-server - RabbitMQ
 
 mongo - MongoDB
 
-challengecrf.api - Api de requisições para Controle de lançamentos e consolidado diário
+challengecrf.api - Request API for Release Control and daily consolidated
 
-challengecrf.queue - Worker para Producer e consumer para o serviço 
+challengecrf.queue - Worker for Producer and consumer for the service 
 
-angularcontainer - Front End em angular para efetuar o cadastro. http://localhost:4200/cashflow
+angularcontainer - Angular Front End to register. http://localhost:4200/cashflow
 
-## Modelo da arquitetura C4
+## C4 architecture model
 
 [![image](https://github.com/bvarandas/ChallengeCrf/assets/13907905/76c11216-d9b7-4d2a-bee2-ec5f4855334b)]
 
