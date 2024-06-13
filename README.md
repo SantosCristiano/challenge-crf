@@ -1,41 +1,41 @@
 # ChallengeCrf
 ## Projeto de desafio porposto para teste.
 
-### Projeto se propoe a fazer um crud com patterns de mercado e mecanismos usados em soluções no mercado de capitais, como mesageria e bibliotecas de compressão de dados para camada de transporte como protobuf.
+Projeto se propoe a fazer um crud com patterns de mercado e mecanismos usados em soluções no mercado de capitais, como mesageria e bibliotecas de compressão de dados para camada de transporte como protobuf.
 
-### Arquitetura - Message/Event Driven e alguns elementos de Clean Architecture.
-### Command-> Event
-### Query-> Reply
-### Usando  Filas do RabbiMQ para coreografia do ambiente.
-### Protobuf para compactação na camada de transporte.
-### SignalR no response do para o client/Angular.
+Arquitetura - Message/Event Driven e alguns elementos de Clean Architecture.
+Command-> Event
+Query-> Reply
+Usando  Filas do RabbiMQ para coreografia do ambiente.
+Protobuf para compactação na camada de transporte.
+SignalR no response do para o client/Angular.
 
-### Padrões Criacionais usados:
-### Factory
-### Singleton
+Padrões Criacionais usados:
+Factory
+Singleton
 
-### Padrões Comportmentais
-### Command
-### Mediator 
+Padrões Comportmentais
+Command
+Mediator 
 
 ## Mais
 
-### Ioc - Inversão de controle
+Ioc - Inversão de controle
 
-### CQRS - com Coreografia
+CQRS - com Coreografia
 
-### Injeção de depedencia
+Injeção de depedencia
 
-### Unit of Work
+Unit of Work
 
-### Event Sourcing (removido)
+Event Sourcing (removido)
 
-### Alguns conceitos de solid tbm foram usados.
+Alguns conceitos de solid tbm foram usados.
 
 
 ## Instruções para rodar
 
-### De dentro da pasta do projeto ChallengeCrf rodar :
+De dentro da pasta do projeto ChallengeCrf rodar :
 
 ```kind create cluster```
 
@@ -50,14 +50,14 @@
 ```kubectl get pvc```
 
 
-### Se um pod não está funcionando, por exemplo 'angular-service'
+Se um pod não está funcionando, por exemplo 'angular-service'
 
 ```kubectl describe pod angular-service```
 
-```kubectl logs angular-service``
+```kubectl logs angular-service```
 
 
-### Irá subir os containers de:
+Irá subir os containers de:
 
 rabbitmq-server - RabbitMQ
 mongo - MongoDB
