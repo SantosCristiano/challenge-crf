@@ -39,7 +39,7 @@ De dentro da pasta do projeto ChallengeCrf rodar :
 
 kind create cluster
 
-kubectl apply -f .
+kubectl apply -f k8s-configs/
 
 
 
